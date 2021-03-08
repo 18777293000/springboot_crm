@@ -7,6 +7,7 @@
   <groupId>com.yangming</groupId>
   <artifactId>crm</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
 
   <name>crm</name>
   <!-- FIXME change it to the project's website -->
@@ -32,10 +33,64 @@
       <scope>test</scope>
     </dependency>
 
+<!--    web服务框架插件-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
+
+<!--    数据库连接管理插件-->
+    <dependency>
+      <groupId>org.mybatis.spring.boot</groupId>
+      <artifactId>mybatis-spring-boot-starter</artifactId>
+      <version>2.1.1</version>
+    </dependency>
+
+<!--    json分页查询插件-->
+    <dependency>
+      <groupId>com.github.pagehelper</groupId>
+      <artifactId>pagehelper-spring-boot-starter</artifactId>
+      <version>1.2.13</version>
+    </dependency>
+
+<!--    数据库连接插件-->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+    </dependency>
+
+<!--    数据源-->
+    <dependency>
+      <groupId>com.mchange</groupId>
+      <artifactId>c3p0</artifactId>
+      <version>0.9.5.5</version>
+    </dependency>
+
+<!--    swagger注解依赖-->
+    <dependency>
+      <groupId>io.springfox</groupId>
+      <artifactId>spring-swagger2</artifactId>
+      <version>2.9.2</version>
+    </dependency>
+
+<!--    swagger界面依赖-->
+    <dependency>
+      <groupId>io.springfox</groupId>
+      <artifactId>springfox-swagger-ui</artifactId>
+      <version>2.9.2</version>
+    </dependency>
+
+<!--    缓存控制依赖-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-cache</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-quartz</artifactId>
+    </dependency>
+
   </dependencies>
 
   <build>
